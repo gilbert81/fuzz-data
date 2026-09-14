@@ -1,0 +1,17 @@
+# put your configuration values here
+
+[runtime]
+log_level="WARNING"  # the system log level of dlt
+# use the dlthub_telemetry setting to enable/disable anonymous usage data reporting, see https://dlthub.com/docs/reference/telemetry
+dlthub_telemetry = true
+
+[sources.shopify_dlt]
+shop_url = "https://pedal-mania-qeci6wdh.myshopify.com"
+api_version = "2026-07"
+
+[sources.google_analytics]
+property_id = "213025502" #  this is an example property id, please use yours
+queries = [
+    {"resource_name"= "sample_analytics_data1", "dimensions"= ["browser", "city"], "metrics"= ["totalUsers", "transactions"]},
+    {"resource_name"= "sample_analytics_data2", "dimensions"= ["browser", "city", "dateHour"], "metrics"= ["totalUsers"]}
+]
