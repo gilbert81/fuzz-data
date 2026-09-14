@@ -1,0 +1,20 @@
+[project]
+name = "shopify-analytics-mvp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "boring-semantic-layer[mcp]>=0.3.16",
+    "dlt[duckdb]>=0.5.1",
+    "google-analytics-data>=0.23.0",
+    "google-api-python-client>=2.200.0",
+    "google-auth-oauthlib>=1.4.1",
+    "ibis-framework>=12.0.0",
+    "marimo>=0.24.0",
+    "pyarrow>=25.0.1",
+    "pyarrow-hotfix>=0.7",
+    "requests>=2.34.2",
+    "requests-oauthlib>=2.0.0",
+    "streamlit>=1.63.0",
+]
